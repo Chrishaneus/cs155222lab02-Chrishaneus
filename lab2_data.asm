@@ -2,8 +2,8 @@
 #          DATA
 # ==========================================================
 .data
-	prep: .word 0:128
-	pointer: .word 0:2048
+	prep: .word 0:4096
+	pointer: .word 0:4096
 	newline: .asciiz "\n"
 	newspace: .asciiz " "
 	htab: .asciiz "\t"
