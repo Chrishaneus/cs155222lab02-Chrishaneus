@@ -20,6 +20,7 @@ fn create_file(code: &String, path: &String) {
     match f {
         Ok(mut f) => {
             f.write_all(code.as_bytes()).unwrap();
+            println!("SUCCESS");
         },
         Err(e) => {
             println!("Error: {}",e);
@@ -57,4 +58,9 @@ fn main() {
 }
 
 // cargo run -- test.bf
+// cargo run -- tests/add_nums.bf
+// cargo run -- tests/geeks_for_geeks.bf
+// cargo run -- tests/hello_world_1.bf
+// cargo run -- tests/hello_world_2.bf
+// cargo run -- tests/parity.bf
 // java -jar Mars4_5.jar nc test.asm
